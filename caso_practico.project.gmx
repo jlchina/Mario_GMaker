@@ -10,6 +10,9 @@
       <sprite>sprites\player</sprite>
       <sprite>sprites\sp_player_walk</sprite>
       <sprite>sprites\sp_player_jump</sprite>
+      <sprite>sprites\player_mini_none</sprite>
+      <sprite>sprites\sp_player_mini_jump</sprite>
+      <sprite>sprites\sp_player_mini_walk</sprite>
     </sprites>
     <sprites name="cajas">
       <sprite>sprites\box_pow_on</sprite>
@@ -19,6 +22,7 @@
       <sprite>sprites\ladrillos_1</sprite>
       <sprite>sprites\ladrillo2</sprite>
       <sprite>sprites\box_hongo</sprite>
+      <sprite>sprites\lad_break</sprite>
     </sprites>
     <sprites name="paisaje">
       <sprite>sprites\nube</sprite>
@@ -40,11 +44,15 @@
       <sprite>sprites\planta_a</sprite>
       <sprite>sprites\turtle_green</sprite>
       <sprite>sprites\turtle_die</sprite>
+      <sprite>sprites\enemigo1</sprite>
+      <sprite>sprites\enemigo1_dead</sprite>
     </sprites>
     <sprites name="powerups">
       <sprite>sprites\honguito</sprite>
       <sprite>sprites\hongo_vida</sprite>
+      <sprite>sprites\flower</sprite>
     </sprites>
+    <sprite>sprites\spr_rojo</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths">
@@ -55,19 +63,13 @@
     <font>fonts\font_score</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_player_stand</object>
-    <object>objects\No_usar</object>
-    <object>objects\obj_planta_a</object>
-    <object>objects\obj_turtle</object>
-    <object>objects\obj_hongo</object>
-    <object>objects\obj_hongovida</object>
-    <object>objects\obj_turtle_die</object>
     <objects name="Piso_Cajas">
       <object>objects\obj_lad_head</object>
       <object>objects\obj_ladrillos</object>
       <object>objects\obj_powbox_on</object>
       <object>objects\obj_box_hongo</object>
       <object>objects\obj_box_vida</object>
+      <object>objects\ladrillo_break</object>
     </objects>
     <objects name="backgrounds">
       <object>objects\obj_score_draw</object>
@@ -77,6 +79,25 @@
       <object>objects\obj_arbusto1</object>
       <object>objects\obk_arbusto2</object>
       <object>objects\obj_arbusto3</object>
+    </objects>
+    <objects name="enemigos">
+      <object>objects\obj_planta_a</object>
+      <object>objects\obj_turtle</object>
+      <object>objects\obj_turtle_die</object>
+      <object>objects\obj_enemigo1</object>
+      <object>objects\obj_enemigo1_dead</object>
+      <object>objects\obj_enemigo_volteado</object>
+    </objects>
+    <objects name="Player">
+      <object>objects\obj_mini_player</object>
+      <object>objects\obj_big_player</object>
+      <object>objects\No_usar</object>
+    </objects>
+    <object>objects\obj_rojo</object>
+    <objects name="powerups">
+      <object>objects\obj_hongo</object>
+      <object>objects\obj_hongovida</object>
+      <object>objects\obj_flower</object>
     </objects>
   </objects>
   <rooms name="rooms">
