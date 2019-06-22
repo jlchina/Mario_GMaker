@@ -4,15 +4,28 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_take_life</sound>
+    <sound>sound\snd_powerup</sound>
+    <sound>sound\snd_power_appears</sound>
+    <sound>sound\snd_gameover</sound>
+    <sound>sound\snd_mario_die</sound>
+    <sound>sound\snd_fireball</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Player">
       <sprite>sprites\player</sprite>
       <sprite>sprites\sp_player_walk</sprite>
+      <sprite>sprites\sp_transf2</sprite>
+      <sprite>sprites\sp_transf</sprite>
       <sprite>sprites\sp_player_jump</sprite>
       <sprite>sprites\player_mini_none</sprite>
       <sprite>sprites\sp_player_mini_jump</sprite>
       <sprite>sprites\sp_player_mini_walk</sprite>
+      <sprite>sprites\sp_player_f</sprite>
+      <sprite>sprites\sp_player_f_w</sprite>
+      <sprite>sprites\sp_player_f_j</sprite>
+      <sprite>sprites\sp_player_ff</sprite>
     </sprites>
     <sprites name="cajas">
       <sprite>sprites\box_pow_on</sprite>
@@ -51,8 +64,10 @@
       <sprite>sprites\honguito</sprite>
       <sprite>sprites\hongo_vida</sprite>
       <sprite>sprites\flower</sprite>
+      <sprite>sprites\sp_fireball</sprite>
     </sprites>
     <sprite>sprites\spr_rojo</sprite>
+    <sprite>sprites\tuberia_1</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths">
@@ -70,6 +85,7 @@
       <object>objects\obj_box_hongo</object>
       <object>objects\obj_box_vida</object>
       <object>objects\ladrillo_break</object>
+      <object>objects\obj_ground2</object>
     </objects>
     <objects name="backgrounds">
       <object>objects\obj_score_draw</object>
@@ -79,6 +95,12 @@
       <object>objects\obj_arbusto1</object>
       <object>objects\obk_arbusto2</object>
       <object>objects\obj_arbusto3</object>
+      <object>objects\obj_sop1</object>
+      <object>objects\obj_sop2</object>
+      <object>objects\obj_sop3</object>
+      <object>objects\obj_sop4</object>
+      <object>objects\obj_mont1</object>
+      <object>objects\obj_mont2</object>
     </objects>
     <objects name="enemigos">
       <object>objects\obj_planta_a</object>
@@ -87,21 +109,36 @@
       <object>objects\obj_enemigo1</object>
       <object>objects\obj_enemigo1_dead</object>
       <object>objects\obj_enemigo_volteado</object>
+      <object>objects\obj_tort_volt</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_mini_player</object>
       <object>objects\obj_big_player</object>
+      <object>objects\obj_player_f</object>
       <object>objects\No_usar</object>
+      <object>objects\obj_big_trans</object>
+      <object>objects\obj_trans_f</object>
     </objects>
     <object>objects\obj_rojo</object>
     <objects name="powerups">
       <object>objects\obj_hongo</object>
       <object>objects\obj_hongovida</object>
       <object>objects\obj_flower</object>
+      <object>objects\obj_fire</object>
+      <object>objects\obj_fire_l</object>
     </objects>
+    <object>objects\obj_tuberia_1</object>
+    <objects name="move levels">
+      <object>objects\obj_ul1</object>
+      <object>objects\obj_dl1</object>
+    </objects>
+    <object>objects\obj_cont_power</object>
+    <object>objects\obj_head_level</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\lvl_creator</room>
     <room>rooms\room0</room>
+    <room>rooms\room1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
